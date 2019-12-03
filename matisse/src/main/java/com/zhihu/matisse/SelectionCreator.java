@@ -93,7 +93,7 @@ public class SelectionCreator {
      * @param matisse   a requester context wrapper.
      * @param mimeTypes MIME type set to select.
      */
-    SelectionCreator(Matisse matisse, @NonNull Set<MimeType> mimeTypes, boolean mediaTypeExclusive) {
+    protected SelectionCreator(Matisse matisse, @NonNull Set<MimeType> mimeTypes, boolean mediaTypeExclusive) {
         mMatisse = matisse;
         mSelectionSpec = SelectionSpec.getCleanInstance();
         mSelectionSpec.mimeTypeSet = mimeTypes;

@@ -35,15 +35,15 @@ public class Matisse {
     private final WeakReference<Activity> mContext;
     private final WeakReference<Fragment> mFragment;
 
-    private Matisse(Activity activity) {
+    protected Matisse(Activity activity) {
         this(activity, null);
     }
 
-    private Matisse(Fragment fragment) {
+    protected Matisse(Fragment fragment) {
         this(fragment.getActivity(), fragment);
     }
 
-    private Matisse(Activity activity, Fragment fragment) {
+    protected Matisse(Activity activity, Fragment fragment) {
         mContext = new WeakReference<>(activity);
         mFragment = new WeakReference<>(fragment);
     }

@@ -58,7 +58,7 @@ public class SelectionSpec {
     public OnCheckedListener onCheckedListener;
     public boolean showPreview;
 
-    private SelectionSpec() {
+    protected SelectionSpec() {
     }
 
     public static SelectionSpec getInstance() {
@@ -71,7 +71,7 @@ public class SelectionSpec {
         return selectionSpec;
     }
 
-    private void reset() {
+    protected void reset() {
         mimeTypeSet = null;
         mediaTypeExclusive = true;
         showSingleMediaType = false;
