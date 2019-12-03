@@ -94,8 +94,18 @@ public class SelectionCreator {
      * @param mimeTypes MIME type set to select.
      */
     protected SelectionCreator(Matisse matisse, @NonNull Set<MimeType> mimeTypes, boolean mediaTypeExclusive) {
+        this(matisse, SelectionSpec.getCleanInstance(), mimeTypes, mediaTypeExclusive);
+    }
+
+    /**
+     * Constructs a new specification builder on the context.
+     *
+     * @param matisse   a requester context wrapper.
+     * @param mimeTypes MIME type set to select.
+     */
+    protected SelectionCreator(Matisse matisse, @NonNull SelectionSpec selectionSpec,  @NonNull Set<MimeType> mimeTypes, boolean mediaTypeExclusive) {
         mMatisse = matisse;
-        mSelectionSpec = SelectionSpec.getCleanInstance();
+        mSelectionSpec = selectionSpec;
         mSelectionSpec.mimeTypeSet = mimeTypes;
         mSelectionSpec.mediaTypeExclusive = mediaTypeExclusive;
         mSelectionSpec.orientation = SCREEN_ORIENTATION_UNSPECIFIED;
