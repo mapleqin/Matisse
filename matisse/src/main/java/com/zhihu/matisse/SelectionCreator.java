@@ -60,7 +60,7 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_USER_PORTRAIT;
  * Fluent API for building media select specification.
  */
 @SuppressWarnings("unused")
-public final class SelectionCreator {
+public class SelectionCreator {
     private final Matisse mMatisse;
     private final SelectionSpec mSelectionSpec;
 

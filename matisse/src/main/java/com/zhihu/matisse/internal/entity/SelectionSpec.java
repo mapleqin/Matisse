@@ -31,7 +31,7 @@ import com.zhihu.matisse.listener.OnSelectedListener;
 import java.util.List;
 import java.util.Set;
 
-public final class SelectionSpec {
+public class SelectionSpec {
 
     public Set<MimeType> mimeTypeSet;
     public boolean mediaTypeExclusive;
