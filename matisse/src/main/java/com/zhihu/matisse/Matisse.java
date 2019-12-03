@@ -139,12 +139,12 @@ public class Matisse {
     }
 
     @Nullable
-    Activity getActivity() {
+    public Activity getActivity() {
         return mContext.get();
     }
 
     @Nullable
-    Fragment getFragment() {
+    public Fragment getFragment() {
         return mFragment != null ? mFragment.get() : null;
     }
 
